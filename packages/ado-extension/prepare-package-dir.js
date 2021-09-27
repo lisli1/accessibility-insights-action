@@ -52,6 +52,9 @@ const newPackageJson = {
     devDependencies: undefined,
 };
 
+fs.copyFileSync('../../docs/ado-extension-overview.md', 'dist/overview.md');
+console.log('copied ado-extension-overview.md to dist/overview.md');
+
 fs.writeFileSync('dist/pkg/package.json', JSON.stringify(newPackageJson, undefined, 4));
 console.log('copied package.json to dist/pkg/package.json');
 
@@ -66,5 +69,5 @@ console.log('copied task.json to dist/pkg/task.json with any overrides');
 fs.copyFileSync('../../yarn.lock', 'dist/pkg/yarn.lock');
 console.log('copied yarn.lock to dist/pkg/yarn.lock');
 
-fs.copyFileSync('../../icons/brand-blue-48px.png', 'dist/pkg/extension-icon.png');
-console.log('copied brand-blue-48px.png to dist/pkg/extension-icon.png');
+fs.copyFileSync('../../icons/brand-blue-128px.png', 'dist/pkg/extension-icon.png');
+console.log('copied brand-blue-128px.png to dist/pkg/extension-icon.png');
