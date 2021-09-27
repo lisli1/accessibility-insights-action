@@ -1,3 +1,8 @@
+<!--
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the MIT License.
+-->
+
 # Accessibility Insights Extension
 
 _This extension is in beta and preview mode._
