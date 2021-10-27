@@ -41,7 +41,7 @@ You can review the log to troubleshoot the issue. Fix it and re-run the workflow
 `;
 
 exports[`ResultMarkdownBuilder with baseline builds content when there are baseline failures and new failures 1`] = `
-"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action
+"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action scan results for \`f457c475\` (latest run)
 
 **4 failure instances not in baseline**
 * (3) **rule id**:  rule description
@@ -62,7 +62,7 @@ This scan used [axe-core axeVersion](https://github.com/dequelabs/axe-core/relea
 `;
 
 exports[`ResultMarkdownBuilder with baseline builds content when there are baseline failures and no new failures 1`] = `
-"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action
+"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action scan results for \`f457c475\` (latest run)
 **:white_check_mark: No new failures**
 No failures were detected by automatic scanning except those which exist in the baseline.
 
@@ -83,7 +83,7 @@ This scan used [axe-core axeVersion](https://github.com/dequelabs/axe-core/relea
 `;
 
 exports[`ResultMarkdownBuilder with baseline builds content when there are new failures and no baseline detected 1`] = `
-"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action
+"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action scan results for \`f457c475\` (latest run)
 
 **4 failure instances**
 * (3) **rule id**:  rule description
@@ -104,7 +104,7 @@ This scan used [axe-core axeVersion](https://github.com/dequelabs/axe-core/relea
 `;
 
 exports[`ResultMarkdownBuilder with baseline builds content when there are new failures and no baseline failures 1`] = `
-"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action
+"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action scan results for \`f457c475\` (latest run)
 
 **4 failure instances**
 * (3) **rule id**:  rule description
@@ -125,7 +125,7 @@ This scan used [axe-core axeVersion](https://github.com/dequelabs/axe-core/relea
 `;
 
 exports[`ResultMarkdownBuilder with baseline builds content when there are no baseline failures and no new failures 1`] = `
-"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action
+"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action scan results for \`f457c475\` (latest run)
 **:white_check_mark: No failures detected**
 No failures were detected by automatic scanning.
 
@@ -145,7 +145,7 @@ This scan used [axe-core axeVersion](https://github.com/dequelabs/axe-core/relea
 `;
 
 exports[`ResultMarkdownBuilder with baseline builds content when there are no new failures and baseline failures are undefined 1`] = `
-"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action
+"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action scan results for \`f457c475\` (latest run)
 **:white_check_mark: No failures detected**
 No failures were detected by automatic scanning.
 
@@ -166,7 +166,7 @@ This scan used [axe-core axeVersion](https://github.com/dequelabs/axe-core/relea
 `;
 
 exports[`ResultMarkdownBuilder with baseline builds content when there are no new failures and no baseline detected 1`] = `
-"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action
+"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action scan results for \`f457c475\` (latest run)
 **:white_check_mark: No failures detected**
 No failures were detected by automatic scanning.
 
@@ -187,7 +187,7 @@ This scan used [axe-core axeVersion](https://github.com/dequelabs/axe-core/relea
 `;
 
 exports[`ResultMarkdownBuilder with baseline builds content when there is no baseline configured 1`] = `
-"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action
+"### ![Accessibility Insights](https://accessibilityinsights.io/img/a11yinsights-blue.svg) Accessibility Insights Action scan results for \`f457c475\` (latest run)
 
 **4 failure instances**
 * (3) **rule id**:  rule description

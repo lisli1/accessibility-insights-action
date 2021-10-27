@@ -141,6 +141,11 @@ describe(ResultMarkdownBuilder, () => {
                 .setup((aip) => aip.getArtifactsUrl())
                 .returns(() => 'artifacts-url')
                 .verifiable(Times.atLeastOnce());
+
+            artifactsInfoProviderMock
+                .setup((aip) => aip.getCommitHash())
+                .returns(() => 'f457c475')
+                .verifiable(Times.once());
         });
 
         it('builds content when there are baseline failures and new failures', () => {
