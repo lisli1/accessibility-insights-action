@@ -7,7 +7,7 @@ import { ArtifactsInfoProvider } from '../artifacts-info-provider';
 import { BaselineInfo } from '../baseline-info';
 import { BaselineEvaluation } from 'accessibility-insights-scan';
 import { brand } from '../content/strings';
-import { bold, escaped, footerSeparator, heading, link, listItem, productTitle, sectionSeparator } from './markdown-formatter';
+import { bold, escaped, footerSeparator, heading, link, listItem, productTitle, sectionSeparator, snippet } from './markdown-formatter';
 
 @injectable()
 export class ResultMarkdownBuilder {
@@ -48,7 +48,7 @@ export class ResultMarkdownBuilder {
         // baselining is available
         if (baselineInfo !== undefined) {
             lines = [
-                this.headingWithMessage(),
+                this.headingWithCommitHash(),
                 sectionSeparator(),
                 this.failureDetailsBaseline(combinedReportResult, failedChecks, baselineInfo.baselineEvaluation),
                 sectionSeparator(),
@@ -84,8 +84,12 @@ export class ResultMarkdownBuilder {
         if (message) {
             return heading(`${productTitle()}: ${message}`, 3);
         }
-        return heading(`${productTitle()}`, 3);
+        return heading(productTitle(), 3);
     };
+
+    private headingWithCommitHash = (): string => {
+        return heading(`${productTitle()} scan results for ${snippet(this.artifactsInfoProvider.getCommitHash())} (latest run)`, 3);
+    }
 
     private baselineDetails = (baselineInfo: BaselineInfo, failedChecks?: number): string => {
         const baselineFileName = baselineInfo.baselineFileName;
