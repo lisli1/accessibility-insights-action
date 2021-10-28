@@ -85,7 +85,7 @@ export class ResultMarkdownBuilder {
 
     private headingWithCommitHash = (): string => {
         return heading(`${productTitle()} scan results for ${snippet(this.artifactsInfoProvider.getCommitHash())} (latest run)`, 3);
-    }
+    };
 
     private baselineDetails = (baselineInfo: BaselineInfo, failedChecks?: number): string => {
         const baselineFileName = baselineInfo.baselineFileName;
