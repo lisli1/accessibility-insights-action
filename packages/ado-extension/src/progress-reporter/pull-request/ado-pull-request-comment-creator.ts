@@ -95,10 +95,7 @@ export class AdoPullRequestCommentCreator extends ProgressReporter {
             return;
         }
 
-        const reportMarkdown = this.reportMarkdownConvertor.convert(
-            combinedReportResult,
-            this.getBaselineInfo(baselineEvaluation),
-        );
+        const reportMarkdown = this.reportMarkdownConvertor.convert(combinedReportResult, this.getBaselineInfo(baselineEvaluation));
         this.traceMarkdown(reportMarkdown);
 
         const prId = parseInt(this.getVariableOrThrow('System.PullRequest.PullRequestId'));
