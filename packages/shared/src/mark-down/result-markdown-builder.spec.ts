@@ -109,30 +109,6 @@ describe(ResultMarkdownBuilder, () => {
         expect(actualContent).toMatchFile(snapshotFile);
     });
 
-    it('builds content with title', () => {
-        const title = 'some title';
-        combinedReportResult = {
-            axeVersion: 'axeVersion',
-            userAgent: 'userAgent',
-            results: {
-                resultsByRule: {
-                    failed: [],
-                    passed: [],
-                    notApplicable: [],
-                },
-                urlResults: {
-                    passedUrls: 0,
-                    failedUrls: 0,
-                    unscannableUrls: 0,
-                },
-            },
-        } as CombinedReportParameters;
-
-        const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, title);
-
-        expect(actualContent).toMatchSnapshot();
-    });
-
     describe('with baseline', () => {
         let baselineFileName = 'baseline file';
 
@@ -180,7 +156,7 @@ describe(ResultMarkdownBuilder, () => {
                 },
             } as CombinedReportParameters;
 
-            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, undefined, baselineInfo);
+            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, baselineInfo);
 
             expect(actualContent).toMatchSnapshot();
             verifyAllMocks();
@@ -211,7 +187,7 @@ describe(ResultMarkdownBuilder, () => {
                 },
             } as CombinedReportParameters;
 
-            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, undefined, baselineInfo);
+            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, baselineInfo);
 
             expect(actualContent).toMatchSnapshot();
             verifyAllMocks();
@@ -242,7 +218,7 @@ describe(ResultMarkdownBuilder, () => {
                 },
             } as CombinedReportParameters;
 
-            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, undefined, baselineInfo);
+            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, baselineInfo);
 
             expect(actualContent).toMatchSnapshot();
             verifyAllMocks();
@@ -280,7 +256,7 @@ describe(ResultMarkdownBuilder, () => {
                 },
             } as CombinedReportParameters;
 
-            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, undefined, baselineInfo);
+            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, baselineInfo);
 
             expect(actualContent).toMatchSnapshot();
             verifyAllMocks();
@@ -309,7 +285,7 @@ describe(ResultMarkdownBuilder, () => {
                 },
             } as CombinedReportParameters;
 
-            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, undefined, baselineInfo);
+            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, baselineInfo);
 
             expect(actualContent).toMatchSnapshot();
             verifyAllMocks();
@@ -345,7 +321,7 @@ describe(ResultMarkdownBuilder, () => {
                 },
             } as CombinedReportParameters;
 
-            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, undefined, baselineInfo);
+            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, baselineInfo);
 
             expect(actualContent).toMatchSnapshot();
             verifyAllMocks();
@@ -382,7 +358,7 @@ describe(ResultMarkdownBuilder, () => {
                 },
             } as CombinedReportParameters;
 
-            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, undefined, baselineInfo);
+            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, baselineInfo);
 
             expect(actualContent).toMatchSnapshot();
             verifyAllMocks();
@@ -413,7 +389,7 @@ describe(ResultMarkdownBuilder, () => {
                 },
             } as CombinedReportParameters;
 
-            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, undefined, baselineInfo);
+            const actualContent = checkResultMarkdownBuilder.buildContent(combinedReportResult, baselineInfo);
 
             expect(actualContent).toMatchSnapshot();
             verifyAllMocks();

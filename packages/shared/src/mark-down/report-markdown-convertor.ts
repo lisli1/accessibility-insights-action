@@ -10,8 +10,8 @@ import { BaselineInfo } from '../baseline-info';
 export class ReportMarkdownConvertor {
     constructor(@inject(ResultMarkdownBuilder) private readonly checkResultMarkdownBuilder: ResultMarkdownBuilder) {}
 
-    public convert(combinedReportResult: CombinedReportParameters, title?: string, baselineInfo?: BaselineInfo): string {
-        return this.checkResultMarkdownBuilder.buildContent(combinedReportResult, title, baselineInfo);
+    public convert(combinedReportResult: CombinedReportParameters, baselineInfo?: BaselineInfo): string {
+        return this.checkResultMarkdownBuilder.buildContent(combinedReportResult, baselineInfo);
     }
 
     public getErrorMarkdown(): string {

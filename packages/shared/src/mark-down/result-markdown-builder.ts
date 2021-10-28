@@ -24,7 +24,7 @@ export class ResultMarkdownBuilder {
         return this.scanResultDetails(lines.join(''));
     }
 
-    public buildContent(combinedReportResult: CombinedReportParameters, title?: string, baselineInfo?: BaselineInfo): string {
+    public buildContent(combinedReportResult: CombinedReportParameters, baselineInfo?: BaselineInfo): string {
         const passedChecks = combinedReportResult.results.resultsByRule.passed.length;
         const inapplicableChecks = combinedReportResult.results.resultsByRule.notApplicable.length;
         const failedChecks = combinedReportResult.results.resultsByRule.failed.reduce((a, b) => a + b.failed.length, 0);
@@ -71,10 +71,6 @@ export class ResultMarkdownBuilder {
                 this.rulesListItemBaseline(passedChecks, inapplicableChecks, failedChecks),
                 sectionSeparator(),
             ];
-        }
-
-        if (title !== undefined) {
-            lines = [heading(title, 3), sectionSeparator()].concat(lines);
         }
 
         return this.scanResultDetails(lines.join(''), this.scanResultFooter(combinedReportResult));

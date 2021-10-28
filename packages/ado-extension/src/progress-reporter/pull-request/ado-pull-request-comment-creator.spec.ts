@@ -275,7 +275,7 @@ describe(ADOPullRequestCommentCreator, () => {
             setupReturnPrThread(repoId, prId, reportStub, reportMd, threadsStub);
             reportMarkdownConvertorMock.reset();
             reportMarkdownConvertorMock
-                .setup((o) => o.convert(reportStub, undefined, baselineInfo))
+                .setup((o) => o.convert(reportStub, baselineInfo))
                 .returns(() => ADOPullRequestCommentCreator.CURRENT_COMMENT_TITLE + reportMd)
                 .verifiable(Times.once());
             loggerMock.setup((o) => o.logInfo(`Didn't find an existing thread, making a new thread`)).verifiable(Times.once());
@@ -511,7 +511,7 @@ describe(ADOPullRequestCommentCreator, () => {
         makeGitApiMockThenable();
         const baselineInfoStub = {};
         reportMarkdownConvertorMock
-            .setup((o) => o.convert(reportStub, undefined, baselineInfoStub))
+            .setup((o) => o.convert(reportStub, baselineInfoStub))
             .returns(() => ADOPullRequestCommentCreator.CURRENT_COMMENT_TITLE + reportMd)
             .verifiable(Times.once());
         adoTaskMock
