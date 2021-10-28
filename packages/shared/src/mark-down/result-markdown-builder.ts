@@ -93,9 +93,9 @@ export class ResultMarkdownBuilder {
         const baselineEvaluation = baselineInfo.baselineEvaluation;
         const baseliningDocsUrl = `https://github.com/microsoft/accessibility-insights-action/blob/main/docs/ado-extension-usage.md#using-a-baseline-file`;
         const baseliningDocsLink = link(baseliningDocsUrl, 'baselining docs');
-        const scanArgumentsLink = link(this.artifactsInfoProvider.getArtifactsUrl(), 'scan arguments');
+        const artifactsLink = link(this.artifactsInfoProvider.getArtifactsUrl(), 'run artifacts');
         const baselineNotConfiguredHelpText = `A baseline lets you mark known failures so it's easier to identify new failures as they're introduced. See ${baseliningDocsLink} for more.`;
-        const baselineNotDetectedHelpText = `To update the baseline with these changes, copy the updated baseline file to ${scanArgumentsLink}. See ${baseliningDocsLink} for more.`;
+        const baselineNotDetectedHelpText = `To update the baseline with these changes, copy the updated baseline file from ${artifactsLink} to scan arguments. See ${baseliningDocsLink} for more.`;
         let lines = [''];
 
         if (baselineFileName === undefined) {
