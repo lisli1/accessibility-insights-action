@@ -17,9 +17,10 @@ describe(ADOArtifactsInfoProvider, () => {
 
     describe('getArtifactsUrl', () => {
         const collectionUri = 'https://dev.azure.com/myOrganizationName/';
-        const teamProject = 'myProject';
+        const teamProject = 'my project';
+        const teamProjectUri = 'my%20project'
         const runId = 100;
-        const expectedArtifactsUrl = `${collectionUri}${teamProject}/_build/results?buildId=${runId}&view=artifacts&pathAsName=false&type=publishedArtifacts`;
+        const expectedArtifactsUrl = `${collectionUri}${teamProjectUri}/_build/results?buildId=${runId}&view=artifacts&pathAsName=false&type=publishedArtifacts`;
 
         it.each`
             collectionUri    | teamProject    | runId        | expectedUrl
