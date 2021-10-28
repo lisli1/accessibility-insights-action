@@ -19,8 +19,8 @@ import { BaselineInfo } from '@accessibility-insights-action/shared';
 @injectable()
 export class AdoPullRequestCommentCreator extends ProgressReporter {
     private connection: NodeApi.WebApi;
-    public static readonly CURRENT_COMMENT_TITLE = 'Results from Current Run';
-    public static readonly PREVIOUS_COMMENT_TITLE = 'Results from Previous Run';
+    public static readonly CURRENT_COMMENT_TITLE = '(latest run)';
+    public static readonly PREVIOUS_COMMENT_TITLE = '(previous run)';
 
     constructor(
         @inject(ADOTaskConfig) private readonly adoTaskConfig: ADOTaskConfig,
@@ -97,7 +97,7 @@ export class AdoPullRequestCommentCreator extends ProgressReporter {
 
         const reportMarkdown = this.reportMarkdownConvertor.convert(
             combinedReportResult,
-            AdoPullRequestCommentCreator.CURRENT_COMMENT_TITLE,
+            undefined,
             this.getBaselineInfo(baselineEvaluation),
         );
         this.traceMarkdown(reportMarkdown);
