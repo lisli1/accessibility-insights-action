@@ -1975,9 +1975,9 @@
   integrity sha512-7EIraBEyRHEe7CH+Fm1XvgqU6uwZN8Q7jppJGcqjROMT29qhAuuOxYB1uEY5UMYQKEmA5D+5tBnhdaPXSsLONA==
 
 "@types/node@>=10.0.0":
-  version "16.11.11"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.11.tgz#6ea7342dfb379ea1210835bada87b3c512120234"
-  integrity sha512-KB0sixD67CeecHC33MYn+eYARkqTheIRNuu97y2XMjR7Wu3XibO1vaY6VBV6O/a89SPI81cEUIYT87UqUWlZNw==
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.1.tgz#88d501e84b6185f6489ecee4ba9e8fcec7f29bb2"
+  integrity sha512-NXKvBVUzIbs6ylBwmOwHFkZS2EXCcjnqr8ZCRNaXBkHAf+3mn/rPcJxwrzuc6movh8fxQAsUUfYklJ/EG+hZqQ==
 
 "@types/node@^10.0.3":
   version "10.17.60"
@@ -5142,9 +5142,9 @@ flatted@^3.1.0:
   integrity sha512-zAoAQiudy+r5SvnSw3KJy5os/oRJYHzrzja/tBDqrZtNhUw8bt6y8OBzMWcjWr+8liV8Eb6yOhw8WZ7VFZ5ZzA==
 
 follow-redirects@^1.14.4:
-  version "1.14.5"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.5.tgz#f09a5848981d3c772b5392309778523f8d85c381"
-  integrity sha512-wtphSXy7d4/OR+MvIFbCVBDzZ5520qV8XfPklSN5QtxuMUJZ+b0Wnst1e1lCDocfzuCkHqj8k0FpZqO+UIaKNA==
+  version "1.14.6"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.6.tgz#8cfb281bbc035b3c067d6cd975b0f6ade6e855cd"
+  integrity sha512-fhUl5EwSJbbl8AR+uYL2KQDxLkdSjZGR36xy46AO7cOMTrCMON6Sa28FmAnC2tRTDbd/Uuzz3aJBv7EBN7JH8A==
 
 for-each@^0.3.3:
   version "0.3.3"
@@ -7428,10 +7428,10 @@ marked-terminal@^4.2.0:
     node-emoji "^1.10.0"
     supports-hyperlinks "^2.1.0"
 
-marked@>=2.0.0, marked@^2.0.0, marked@^4.0.6:
-  version "4.0.6"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-4.0.6.tgz#cd199503102b6807354f00574348d41ad4fd25d2"
-  integrity sha512-+H0bTf8DM8zLuFBUm/2VklxaCrwlBFgoJzHJcMZCnZ9cPgsllHwKpL6TPLdDeA38yPluMuVKOL1hO5w6HmG5Mg==
+marked@>=2.0.0, marked@^2.0.0, marked@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-4.0.8.tgz#ef127626ac65786460f9420d57cc8d5ffdcacbed"
+  integrity sha512-dkpJMIlJpc833hbjjg8jraw1t51e/eKDoG8TFOgc5O0Z77zaYKigYekTDop5AplRoKFGIaoazhYEhGkMtU3IeA==
 
 match-all@^1.2.6:
   version "1.2.6"
@@ -10509,9 +10509,9 @@ unbzip2-stream@^1.3.3:
     through "^2.3.8"
 
 underscore@1.12.1, underscore@1.8.3, underscore@>=1.12.1, underscore@^1.11.0, underscore@^1.9.1:
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.13.1.tgz#0c1c6bd2df54b6b69f2314066d65b6cde6fcf9d1"
-  integrity sha512-hzSoAVtJF+3ZtiFX0VgfFPHEDRm7Y/QPjGyNo4TVdnDTdft3tr8hEkD25a1jC+TjTuE7tkHGKkhwCgs9dgBB2g==
+  version "1.13.2"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.13.2.tgz#276cea1e8b9722a8dbed0100a407dda572125881"
+  integrity sha512-ekY1NhRzq0B08g4bGuX4wd2jZx5GnKz6mKSqFL4nqBlfyMGiG10gDFhDTMEfYmDL6Jy0FUIZp7wiRB+0BP7J2g==
 
 unique-filename@^1.1.1:
   version "1.1.1"
