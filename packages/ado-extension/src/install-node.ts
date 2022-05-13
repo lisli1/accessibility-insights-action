@@ -4,7 +4,8 @@ import * as toolLib from 'azure-pipelines-tool-lib/tool';
 // import * as path from 'path';
 
 export async function getNode16() {
-    const node16 = '16.14.2';
+    const node16 = '16.15.0';
+    console.log(node16);
     return getNode(node16);
 }
 
@@ -26,6 +27,7 @@ async function acquireNode(version: string): Promise<string> {
 
     const downloadUrl = 'https://nodejs.org/dist/v' + version + '/' + urlFileName;
 
+    console.log(downloadUrl);
     let downloadPath: string;
     try {
         downloadPath = await toolLib.downloadTool(downloadUrl);
@@ -34,6 +36,7 @@ async function acquireNode(version: string): Promise<string> {
         throw err;
     }
 
+    console.log(downloadPath);
     return downloadPath;
     
     // //
